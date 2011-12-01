@@ -26,7 +26,7 @@
 		$result = array();
 		
 		$result['Apache Web Server'] = function_exists('apache_getenv') || apache_header_exists();
-		$result['PHP 5.2.6 or higher'] = version_compare(PHP_VERSION , "5.2.6", ">=");
+		$result['PHP 5.2.5 or higher'] = version_compare(PHP_VERSION , "5.2.5", ">=");
 		$result['PHP CURL library'] = function_exists('curl_init');
 		$result['PHP OpenSSL library'] = function_exists('openssl_open');
 		$result['PHP Mcrypt library'] = function_exists('mcrypt_encrypt');
@@ -97,7 +97,7 @@
 					<p>To install LemonStand your server must meet the following requirements:</p>
 
 					<ul class="bool_list bullets">
-						<li>PHP 5.2.6 or higher</li>
+						<li>PHP 5.2.5 or higher</li>
 						<li>PHP CURL library</li>
 						<li>PHP OpenSSL library</li>
 						<li>PHP Mcrypt library</li>
